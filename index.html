@@ -1,6 +1,5 @@
 <!doctype html>
 <html lang="en" class="scroll-smooth">
-
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
@@ -9,8 +8,9 @@
   <!-- Tailwind build -->
   <link rel="stylesheet" href="output.css" />
   <!-- Icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
   <!-- Favicon -->
   <link rel="icon" href="Assets/Logo.png" />
 </head>
@@ -19,11 +19,7 @@
   <script src="Theme.js"></script>
 
   <!-- TOAST ROOT (top-right) -->
-  <div id="toast-root"
-     class="fixed z-[100] pointer-events-none flex flex-col items-end space-y-3"
-     style="top: calc(1rem + env(safe-area-inset-top));
-            right: calc(1rem + env(safe-area-inset-right));">
-</div>
+  <div id="toast-root" class="fixed top-4 right-4 z-[100] space-y-3 pointer-events-none"></div>
 
   <!-- WIDTH-ONLY CONTAINER -->
   <div class="w-full mx-auto
@@ -39,9 +35,9 @@
         <ol class="flex items-center gap-3 text-base text-zinc-100 dark:text-zinc-200">
           <li>
             <a href="index.html"
-              class="inline-flex items-center gap-2 hover:text-white dark:hover:text-white font-medium">
-              <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"
-                stroke-linecap="round" stroke-linejoin="round">
+               class="inline-flex items-center gap-2 hover:text-white dark:hover:text-white font-medium">
+              <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none"
+                   stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
                 <path d="M3 9.5L12 3l9 6.5V21a1 1 0 0 1-1 1h-5v-7H9v7H4a1 1 0 0 1-1-1V9.5z"></path>
               </svg>
               Home
@@ -49,7 +45,7 @@
           </li>
           <li>
             <svg class="w-4 h-5 mt-1 text-zinc-300 dark:text-zinc-100" viewBox="0 0 24 24" fill="none"
-              stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                 stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
               <polyline points="9 18 15 12 9 6"></polyline>
             </svg>
           </li>
@@ -61,7 +57,7 @@
     <!-- HERO -->
     <header class="relative w-full min-h-[80vh] sm:min-h-[90vh] lg:min-h-[100vh]">
       <img src="Assets/Build.png" alt="Business Banner"
-        class="absolute inset-0 w-full h-full object-cover dark:brightness-100 dark:invert" />
+           class="absolute inset-0 w-full h-full object-cover dark:brightness-100 dark:invert" />
       <div class="absolute inset-0 dark:bg-black/30"></div>
 
       <div class="relative flex items-center h-full px-4 sm:px-6 lg:px-10">
@@ -74,7 +70,7 @@
           </p>
           <div class="mt-6 flex flex-col sm:flex-row gap-3">
             <a href="#contact"
-              class="inline-flex items-center justify-center gap-2 bg-[#263d83] hover:bg-[#1d2f66] px-6 py-3 rounded-lg font-semibold shadow text-white">
+               class="inline-flex items-center justify-center gap-2 bg-[#263d83] hover:bg-[#1d2f66] px-6 py-3 rounded-lg font-semibold shadow text-white">
               Start the Conversation <i class="fa-solid fa-paper-plane"></i>
             </a>
           </div>
@@ -89,8 +85,11 @@
           <h2 class="text-2xl sm:text-3xl font-bold mb-3 text-[#263d83] dark:text-white">Start the Conversation</h2>
           <p class="dark:text-gray-300 mb-8">Fill out the form below and we'll respond as soon as possible.</p>
 
-          <form id="biz-form" action="https://formsubmit.co/contact@nexusxperts.com" method="POST"
-            class="space-y-5 dark:text-white" novalidate>
+          <form id="biz-form"
+                action="https://formsubmit.co/contact@nexusxperts.com"
+                method="POST"
+                class="space-y-5 dark:text-white"
+                novalidate>
             <!-- FormSubmit controls -->
             <input type="hidden" name="_subject" value="New Business Inquiry - nexusxperts.com" />
             <input type="hidden" name="_template" value="table" />
@@ -111,8 +110,8 @@
                   First Name <span class="text-red-600">*</span>
                 </label>
                 <input id="first_name" name="first_name" required type="text" placeholder="Enter first name"
-                  autocomplete="given-name"
-                  class="w-full h-12 px-4 bg-transparent border border-gray-300 dark:border-gray-600 placeholder-gray-500 dark:placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#4966AE] rounded-xl" />
+                       autocomplete="given-name"
+                       class="w-full h-12 px-4 bg-transparent border border-gray-300 dark:border-gray-600 placeholder-gray-500 dark:placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#4966AE] rounded-xl" />
                 <p data-err="first_name" class="mt-1 text-xs text-red-600 hidden"></p>
               </div>
               <div>
@@ -120,8 +119,8 @@
                   Last Name <span class="text-red-600">*</span>
                 </label>
                 <input id="last_name" name="last_name" required type="text" placeholder="Enter last name"
-                  autocomplete="family-name"
-                  class="w-full h-12 px-4 bg-transparent border border-gray-300 dark:border-gray-600 placeholder-gray-500 dark:placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#4966AE] rounded-xl" />
+                       autocomplete="family-name"
+                       class="w-full h-12 px-4 bg-transparent border border-gray-300 dark:border-gray-600 placeholder-gray-500 dark:placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#4966AE] rounded-xl" />
                 <p data-err="last_name" class="mt-1 text-xs text-red-600 hidden"></p>
               </div>
             </div>
@@ -132,8 +131,8 @@
                 Email <span class="text-red-600">*</span>
               </label>
               <input id="email" name="email" required type="email" placeholder="someone@example.com"
-                autocomplete="email"
-                class="w-full h-12 px-4 bg-transparent border border-gray-300 dark:border-gray-600 placeholder-gray-500 dark:placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#4966AE] rounded-xl" />
+                     autocomplete="email"
+                     class="w-full h-12 px-4 bg-transparent border border-gray-300 dark:border-gray-600 placeholder-gray-500 dark:placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#4966AE] rounded-xl" />
               <p data-err="email" class="mt-1 text-xs text-red-600 hidden"></p>
             </div>
 
@@ -143,16 +142,12 @@
                 Phone Number <span class="text-red-600">*</span>
               </label>
               <div class="flex gap-2">
-                <span
-                  class="h-12 flex items-center px-4 border border-gray-300 dark:border-gray-600 rounded-lg text-[#263d83] dark:text-white">+92</span>
-                <input id="phone" name="phone" required type="tel" placeholder="3001234567" autocomplete="tel-national"
-                  inputmode="numeric" pattern="[0-9]{10,11}"
-                  class="w-full h-12 px-4 bg-transparent border border-gray-300 dark:border-gray-600 placeholder-gray-500 dark:placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#4966AE] rounded-xl" />
+                <span class="h-12 flex items-center px-4 border border-gray-300 dark:border-gray-600 rounded-lg text-[#263d83] dark:text-white">+92</span>
+                <input id="phone" name="phone" required type="tel" placeholder="3001234567"
+                       autocomplete="tel-national" inputmode="numeric" pattern="[0-9]{10,11}"
+                       class="w-full h-12 px-4 bg-transparent border border-gray-300 dark:border-gray-600 placeholder-gray-500 dark:placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#4966AE] rounded-xl" />
               </div>
-              <p class="text-xs text-gray-500 mt-1">
-  Pakistan (<span dir="rtl" lang="ur">پاکستان</span>). Enter 10–11 digits (no spaces).
-</p>
-
+              <p class="text-xs text-gray-500 mt-1">Pakistan (‫پاکستان‬‎). Enter 10–11 digits (no spaces).</p>
               <p data-err="phone" class="mt-1 text-xs text-red-600 hidden"></p>
             </div>
 
@@ -163,7 +158,7 @@
                   Budget <span class="text-red-600">*</span>
                 </label>
                 <input id="budget" name="budget" required type="text" placeholder="Your Budget" autocomplete="off"
-                  class="w-full h-12 px-4 bg-transparent border border-gray-300 dark:border-gray-600 placeholder-gray-500 dark:placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#4966AE] rounded-xl" />
+                       class="w-full h-12 px-4 bg-transparent border border-gray-300 dark:border-gray-600 placeholder-gray-500 dark:placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#4966AE] rounded-xl" />
                 <p data-err="budget" class="mt-1 text-xs text-red-600 hidden"></p>
               </div>
               <div>
@@ -171,8 +166,8 @@
                   Company Name <span class="text-red-600">*</span>
                 </label>
                 <input id="company" name="company" required type="text" placeholder="Your company name"
-                  autocomplete="organization"
-                  class="w-full h-12 px-4 bg-transparent border border-gray-300 dark:border-gray-600 placeholder-gray-500 dark:placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#4966AE] rounded-xl" />
+                       autocomplete="organization"
+                       class="w-full h-12 px-4 bg-transparent border border-gray-300 dark:border-gray-600 placeholder-gray-500 dark:placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#4966AE] rounded-xl" />
                 <p data-err="company" class="mt-1 text-xs text-red-600 hidden"></p>
               </div>
             </div>
@@ -184,8 +179,8 @@
                   Company Domain / URL
                 </label>
                 <input id="domain" name="domain" type="url" placeholder="https://yourcompany.com" inputmode="url"
-                  autocomplete="url"
-                  class="w-full h-12 px-4 bg-transparent border border-gray-300 dark:border-gray-600 placeholder-gray-500 dark:placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#4966AE] rounded-xl" />
+                       autocomplete="url"
+                       class="w-full h-12 px-4 bg-transparent border border-gray-300 dark:border-gray-600 placeholder-gray-500 dark:placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#4966AE] rounded-xl" />
                 <p data-err="domain" class="mt-1 text-xs text-red-600 hidden"></p>
               </div>
               <div>
@@ -193,7 +188,7 @@
                   Region <span class="text-red-600">*</span>
                 </label>
                 <select id="region" name="region" required
-                  class="w-full h-12 px-4 bg-transparent border border-gray-300 dark:border-gray-600 focus:outline-none focus:ring-2 focus:ring-[#4966AE] rounded-xl text-[#263d83] dark:text-white">
+                        class="w-full h-12 px-4 bg-transparent border border-gray-300 dark:border-gray-600 focus:outline-none focus:ring-2 focus:ring-[#4966AE] rounded-xl text-[#263d83] dark:text-white">
                   <option class="text-black" value="">Please Select</option>
                   <option class="text-[#263d83]" value="asia">Asia</option>
                   <option class="text-[#263d83]" value="europe">Europe</option>
@@ -211,7 +206,7 @@
                 Services you're looking for <span class="text-red-600">*</span>
               </label>
               <select id="services" name="services" required
-                class="w-full h-12 px-4 bg-transparent border border-gray-300 dark:border-gray-600 placeholder-[#263d83] dark:placeholder-[#263d83] focus:outline-none focus:ring-2 focus:ring-[#4966AE] rounded-xl text-[#263d83] dark:text-white">
+                      class="w-full h-12 px-4 bg-transparent border border-gray-300 dark:border-gray-600 placeholder-[#263d83] dark:placeholder-[#263d83] focus:outline-none focus:ring-2 focus:ring-[#4966AE] rounded-xl text-[#263d83] dark:text-white">
                 <option class="text-black" value="">Select a service</option>
                 <option class="text-[#263d83]">Generative AI/Chatbot</option>
                 <option class="text-[#263d83]">AI & Machine Learning</option>
@@ -233,14 +228,14 @@
                 Project Details <span class="text-red-600">*</span>
               </label>
               <textarea id="project_details" name="project_details" required rows="5"
-                placeholder="Tell us about your project..."
-                class="w-full px-4 py-3 bg-transparent border border-gray-300 dark:border-gray-600 placeholder-gray-500 dark:placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#4966AE] rounded-xl"></textarea>
+                        placeholder="Tell us about your project..."
+                        class="w-full px-4 py-3 bg-transparent border border-gray-300 dark:border-gray-600 placeholder-gray-500 dark:placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#4966AE] rounded-xl"></textarea>
               <p data-err="project_details" class="mt-1 text-xs text-red-600 hidden"></p>
             </div>
 
             <!-- Submit -->
             <button type="submit" id="submitBtn"
-              class="flex items-center justify-center gap-2 bg-[#263d83] hover:bg-[#1d2f66] px-6 py-3 rounded-lg font-semibold shadow transition w-full sm:w-auto text-white">
+                    class="flex items-center justify-center gap-2 bg-[#263d83] hover:bg-[#1d2f66] px-6 py-3 rounded-lg font-semibold shadow transition w-full sm:w-auto text-white">
               <span>Send Message</span>
               <i class="fa-solid fa-paper-plane" aria-hidden="true"></i>
             </button>
@@ -267,15 +262,14 @@
           <!-- Social icons -->
           <div class="flex gap-5">
             <a href="https://share.google/I6qkB9UdD4kLe2hla" target="_blank" aria-label="Facebook"
-              class="[&>svg]:w-5 [&>svg]:h-5 hover:text-blue-600 transition">
+               class="[&>svg]:w-5 [&>svg]:h-5 hover:text-blue-600 transition">
               <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 320 512">
-                <path
-                  d="M80 299.3V512H196V299.3h86.5l18-97.8H196V166.9c0-51.7 20.3-71.5 72.7-71.5
+                <path d="M80 299.3V512H196V299.3h86.5l18-97.8H196V166.9c0-51.7 20.3-71.5 72.7-71.5
                          c16.3 0 29.4 .4 37 1.2V7.9C291.4 4 256.4 0 236.2 0C129.3 0 80 50.5 80 159.4v42.1H14v97.8H80z" />
               </svg>
             </a>
             <a href="https://x.com/NexusXperts" target="_blank" aria-label="Twitter"
-              class="[&>svg]:w-5 [&>svg]:h-5 hover:text-sky-500 transition">
+               class="[&>svg]:w-5 [&>svg]:h-5 hover:text-sky-500 transition">
               <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 512 512">
                 <path d="M459.4 151.7c.3 4.5 .3 9.1 .3 13.6c0 138.7-105.6 298.6-298.6 298.6
                          c-59.4 0-114.6-17.1-161.1-47.1c8.4 1 16.6 1.3 25.2 1.3c49.1 0 94.2-16.6 130-44.8
@@ -289,7 +283,7 @@
               </svg>
             </a>
             <a href="https://www.linkedin.com/company/nexusxperts/posts/?feedView=all" target="_blank"
-              aria-label="LinkedIn" class="[&>svg]:w-5 [&>svg]:h-5 hover:text-blue-700 transition">
+               aria-label="LinkedIn" class="[&>svg]:w-5 [&>svg]:h-5 hover:text-blue-700 transition">
               <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 448 512">
                 <path d="M100.3 448H7.4V148.9h92.9zM53.8 108.1C24.1 108.1 0 83.5 0 53.8S24.1-.6 53.8-.6
                          s53.8 24.1 53.8 54.4c0 29.8-24.1 54.3-53.8 54.3zm394.1 339.9h-92.7V302.4
@@ -298,7 +292,7 @@
               </svg>
             </a>
             <a href="https://www.instagram.com/nexus_xperts/" target="_blank" aria-label="Instagram"
-              class="[&>svg]:w-5 [&>svg]:h-5 dark:hover:text-pink-200 transition">
+               class="[&>svg]:w-5 [&>svg]:h-5 dark:hover:text-pink-200 transition">
               <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
                 <path d="M7 2C4.24 2 2 4.24 2 7v10c0 2.76 2.24 5 5 5h10c2.76 0 5-2.24 5-5V7c0-2.76-2.24-5-5-5H7zm10
                          2c1.66 0 3 1.34 3 3v10c0 1.66-1.34 3-3 3H7c-1.66 0-3-1.34-3-3V7c0-1.66 1.34-3 3-3h10zm-5
@@ -313,18 +307,12 @@
         <div>
           <h6 class="mb-4 font-semibold uppercase">Services</h6>
           <ul class="space-y-2">
-            <li><a href="services.html#ai-ml" class="hover:text-black dark:hover:text-white transition">Generative
-                AI/Chatbot</a></li>
-            <li><a href="services.html#web-dev" class="hover:text-black dark:hover:text-white transition">Web
-                Development</a></li>
-            <li><a href="services.html#digital-marketing"
-                class="hover:text-black dark:hover:text-white transition">Digital Marketing</a></li>
-            <li><a href="services.html#consulting" class="hover:text-black dark:hover:text-white transition">Automation
-                Tools</a></li>
-            <li><a href="services.html#mobile-dev" class="hover:text-black dark:hover:text-white transition">App Design
-                & Develop</a></li>
-            <li><a href="services.html#ui-ux" class="hover:text-black dark:hover:text-white transition">UI/UX Design</a>
-            </li>
+            <li><a href="services.html#ai-ml" class="hover:text-black dark:hover:text-white transition">Generative AI/Chatbot</a></li>
+            <li><a href="services.html#web-dev" class="hover:text-black dark:hover:text-white transition">Web Development</a></li>
+            <li><a href="services.html#digital-marketing" class="hover:text-black dark:hover:text-white transition">Digital Marketing</a></li>
+            <li><a href="services.html#consulting" class="hover:text-black dark:hover:text-white transition">Automation Tools</a></li>
+            <li><a href="services.html#mobile-dev" class="hover:text-black dark:hover:text-white transition">App Design & Develop</a></li>
+            <li><a href="services.html#ui-ux" class="hover:text-black dark:hover:text-white transition">UI/UX Design</a></li>
           </ul>
         </div>
 
@@ -336,10 +324,8 @@
             <li><a href="services.html" class="hover:text-black dark:hover:text-white transition">Services</a></li>
             <li><a href="Careers.html" class="hover:text-black dark:hover:text-white transition">Careers</a></li>
             <li><a href="Team.html" class="hover:text-black dark:hover:text-white transition">Our Team</a></li>
-            <li><a href="Life.html" class="hover:text-black dark:hover:text-white transition">Life At NexusXperts</a>
-            </li>
-            <li><a href="contact.html#contact" class="hover:text-black dark:hover:text-white transition">Contact Us</a>
-            </li>
+            <li><a href="Life.html" class="hover:text-black dark:hover:text-white transition">Life At NexusXperts</a></li>
+            <li><a href="contact.html#contact" class="hover:text-black dark:hover:text-white transition">Contact Us</a></li>
           </ul>
         </div>
 
@@ -347,10 +333,8 @@
         <div>
           <h6 class="mb-4 font-semibold uppercase">Get in Touch</h6>
           <ul class="space-y-2">
-            <li>Email: <a href="mailto:info@nexusxperts.com"
-                class="hover:text-black dark:hover:text-white transition">info@nexusxperts.com</a></li>
-            <li>Phone: <a href="tel:+923399069000" class="hover:text-black dark:hover:text-white transition">+92 339 906
-                9000</a></li>
+            <li>Email: <a href="mailto:info@nexusxperts.com" class="hover:text-black dark:hover:text-white transition">info@nexusxperts.com</a></li>
+            <li>Phone: <a href="tel:+923399069000" class="hover:text-black dark:hover:text-white transition">+92 339 906 9000</a></li>
             <li>Location: Pakistan, Lahore</li>
           </ul>
         </div>
@@ -371,9 +355,9 @@
 
       const accents = {
         success: "bg-emerald-500",
-        error: "bg-red-500",
-        warn: "bg-amber-500",
-        info: "bg-sky-500",
+        error:   "bg-red-500",
+        warn:    "bg-amber-500",
+        info:    "bg-sky-500",
       };
 
       el.className = [
@@ -417,25 +401,25 @@
 
     const fields = {
       first_name: { required: true },
-      last_name: { required: true },
-      email: {
+      last_name:  { required: true },
+      email:      {
         required: true,
         test: (v) => /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(v),
         msg: "Enter a valid email address."
       },
-      phone: {
+      phone:      {
         required: true,
         test: (v) => /^[0-9]{10,11}$/.test(v),
         msg: "Enter 10–11 digits (no spaces)."
       },
-      budget: { required: true },
-      company: { required: true },
-      region: {
+      budget:     { required: true },
+      company:    { required: true },
+      region:     {
         required: true,
         test: (v) => !!v,
         msg: "Please select a region."
       },
-      services: {
+      services:   {
         required: true,
         test: (v) => !!v,
         msg: "Please select a service."
@@ -541,5 +525,4 @@
     });
   </script>
 </body>
-
 </html>
